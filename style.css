@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+#bgvid {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    align-items: center;
+    position: fixed;
+    background-size: cover;
+}
+
+.background {
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(#2f00ff3d, #ffffff00);
+}
+
+.cabelink {
+    display: flex;
+    gap: 3rem;
+    /*espaçamento entre os itens sem usar margin/padding*/
+    font-weight: 400;
+}
+
+.cabelink a {
+    color: white;
+    font-size: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cabelink a::after{
+    content: " ";
+    width: 0;
+    height: 4px;
+    background-color: #25deff;
+    position: absolute;
+}
+
+.cabelink a:hover {
+    color: #25deff;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.cabelink a:hover::after{
+    width: 4px;
+    height: 4px;
+    border-radius: 50px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid #ffffff00;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+
+#logom{
+    width: 150px;
+}
+
+
+.logo:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+
+button {
+    color: #25deff;
+    background: transparent;
+    border: solid 2px #25deff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    width: 150px;
+    transform: skew(10deg);
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: #25deff;
+    color: #ffffff;
+    width: 160px;
+    transition-duration: 0.5s;
+}
+
+.conttext {
+    padding-top: 150px;
+    padding-left: 150px;
+}
+
+.text h3 {
+    color: #ffffff;
+}
+
+.text h1 {
+    color: #ffffff;
+    margin-top: 3px;
+}
+
+.text span {
+    color: #25deff;
+}
+
+.text p {
+    max-width: 250px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.redes a{
+    color: #25deff;
+    padding-left: 5px;
+    padding-right: 18px;
+}
+
+#zap:hover{
+color: rgb(0, 255, 115);
+}
+
+#insta:hover{
+    color: rgb(255, 190, 70);
+}
+
+#twitt:hover{
+    color: rgb(111, 178, 255);
+}
+
+#git:hover{
+    color: rgb(255, 253, 120);
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #25deff;
+    color: #ffffff;
+    width: 210px;
+    transition-duration: 0.5s;
+}
